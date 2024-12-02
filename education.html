@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Abdul Safwan</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header .navlist li a {
+            color: white;
+        }
+
+        .center-text h2 {
+            color: #00ffcc;
+        }
+
+        .timeline-title, h4, h5 {
+            color: white;
+        }
+
+        .circle-dot {
+            background-color: #00ffcc;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: auto; /* Ensures the footer is pushed to the bottom */
+        }
+
+        .footer .message {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer .copyright {
+            font-size: 0.9em;
+        }
+
+        .navlist.active {
+            background-color: #222;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #222;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navlist" id="navlist">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="skills.html#skills">Skills</a></li>
+        <li><a href="education.html#education">Education</a></li>
+        <li><a href="contact.html#contact">Contact</a></li>
+    </ul>
+</header>
+
+<!-- Education Section -->
+<section class="education-content" id="education">
+    <div class="container">
+        <div class="center-text" data-aos="fade-down">
+            <h2>My <span>Education</span></h2>
+        </div>
+        <div class="education">
+            <div class="timeline-box" data-aos="zoom-in">
+                <div class="timeline">
+                    <!-- Timeline-item -->
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">B.E in Computer Science and Engineering - CGPA: 8.35*</h3>
+                        <h4>Vivekananda College of Engineering and Technology, Puttur</h4>
+                        <h5><i class="ri-calendar-line"></i> 2022 - 2026</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">Pre-University - 81%</h3>
+                        <h4>St Philomina PU College, Puttur</h4>
+                        <h5><i class="ri-calendar-line"></i> 2020 - 2022</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">SSLC - 85.36%</h3>
+                        <h4>Shri Ramakrishna High School, Puttur</h4>
+                        <h5><i class="ri-calendar-line"></i> 2020</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <small class="message">Thanks for visiting and happy coding!</small>
+    <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    const menuIcon = document.getElementById('menu-icon');
+    const navlist = document.getElementById('navlist');
+
+    menuIcon.addEventListener('click', () => {
+        navlist.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
+ 

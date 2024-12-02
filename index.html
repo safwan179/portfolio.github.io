@@ -4,126 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        /* Base Styles */
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            box-sizing: border-box;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            position: relative;
-        }
-
-        .navlist {
-            list-style-type: none;
-            display: flex;
-            gap: 15px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navlist li a {
-            text-decoration: none;
-            color: white;
-            padding: 5px 10px;
-            transition: 0.3s;
-        }
-
-        .navlist li a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-
-        #menu-icon {
-            font-size: 24px;
-            cursor: pointer;
-            display: none; /* Hidden by default */
-        }
-
-        .home-content {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .home-content h1 span {
-            color: #007bff;
-        }
-
-        .img-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .footer .list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .footer .list li a {
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        .footer .list li a:hover {
-            text-decoration: underline;
-        }
-
-        .footer .copyright {
-            margin-top: 10px;
-            font-size: 12px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            #menu-icon {
-                display: block; /* Show burger icon on small screens */
-            }
-
-            .navlist {
-                display: none; /* Hide navlist by default */
-                flex-direction: column;
-                background-color: #333;
-                position: absolute;
-                top: 50px;
-                right: 10px;
-                width: 200px;
-                border-radius: 5px;
-                padding: 10px 0;
-            }
-
-            .navlist.active {
-                display: flex; /* Show navlist when active */
-            }
-
-            .navlist li {
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -135,33 +17,53 @@
           <li><a href="education.html">Education</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-    </header>
+      </header>
     <section class="home">
         <div class="home-content">
             <h3>Hi</h3>
-            <h1>I'm <span>Abdul Safwan<br></span>About Me</h1>
-            <p>"I'm pursuing Computer Science Engineering at Vivekananda College of Engineering and Technology. I’ve always been fascinated by technology and software development, and I’m excited to start my journey in this field. So far, I’ve learned the basics of programming languages like C++, and I’m looking forward to diving deeper into web development. In my free time, I enjoy exploring coding challenges."</p>
+            <h1>I'm <span>Abdul Safwan<br></span>About Me</h2>
+                <p>"I'm pursuing Computer Science Engineering at  Vivekananda college of engineering and technology . I’ve always been fascinated by technology and software development, and I’m excited to start my journey in this field. So far, I’ve learned the basics of programming languages like C++, and I’m looking forward to diving deeper into web development. In my free time, I enjoy exploring coding challenges"</h1>
+            <p> </p>
+                <div class="btn-box">
+                    
+
+                </div>
         </div>
-        <div class="img-box">
-            <img src="safwan_pic.jpg" alt="Abdul Safwan">
+        <div class="img-box" style="width: auto; height: 15%;" >
+            <img src="safwan_pic.jpg">
+
         </div>
     </section>
+    
+    
+
     <footer class="footer">
+
+        <!-- <div class="social">
+            
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div> -->
+        
         <ul class="list">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+            <a href="#">Privacy policy</a>
+          </li>
         </ul>
-        <p class="copyright">© 2024 Abdul Safwan | All rights reserved</p>
+
+        <p class="copyright">0 2024 Abdul Safwan |All right reserved </p>
     </footer>
-    <script>
-        // JavaScript to toggle mobile menu
-        document.getElementById('menu-icon').addEventListener('click', function() {
-            const navlist = document.getElementById('navlist');
-            navlist.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>
